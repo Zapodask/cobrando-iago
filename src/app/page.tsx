@@ -31,13 +31,14 @@ export default function Home() {
 
   return (
     <div className={styles.body}>
-      <div className={styles.box}>
+      <main className={styles.box}>
         <h1 className={styles.title}>Aguardando recomendação do Iago a</h1>
         <p className={styles.time}>
           {weeks} semanas, {days} dias, {hours} horas, {minutes} minutos,{" "}
           {seconds} segundos
         </p>
-      </div>
+      </main>
+      <footer className={styles.footer}>E o Vitinho tem uma</footer>
     </div>
   );
 }
