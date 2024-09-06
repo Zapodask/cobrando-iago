@@ -12,6 +12,14 @@
   align-items: center;
 }
 
+.title {
+  text-align: center;
+}
+
+.peoples_waiting_box {
+  margin-bottom: 30px;
+}
+
 .time {
   font-size: 48px;
 }
