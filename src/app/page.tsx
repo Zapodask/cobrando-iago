@@ -1,4 +1,3 @@
-"use client";
 
 import Counter from "./components/ counter";
 import styles from "./page.module.css";
