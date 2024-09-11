@@ -1,5 +1,5 @@
 
-import Counter from "./components/ counter";
+import Counter from "./components/counter";
 import styles from "./page.module.css";
 
 export default function Home() {

@@ -11,7 +11,6 @@ import {
 import { useEffect, useState } from "react";
 import styles from "../page.module.css";
 
-
 interface CounterProps {
     initialTime: number;
 }
@@ -36,11 +35,13 @@ function Counter({ initialTime }: CounterProps) {
 
     const years = differenceInYears(currentTime, startTime);
     const months = differenceInMonths(currentTime, startTime) % 12;
-    const weeks = differenceInWeeks(currentTime, startTime);
+    const totalWeeks = differenceInWeeks(currentTime, startTime);
     const days = differenceInDays(currentTime, startTime) % 7;
     const hours = differenceInHours(currentTime, startTime) % 24;
     const minutes = differenceInMinutes(currentTime, startTime) % 60;
     const seconds = differenceInSeconds(currentTime, startTime) % 60;
+
+    const weeks = totalWeeks < 4 ? totalWeeks : 0;
 
     return (
         <p className={styles.time}>
